@@ -83,8 +83,9 @@ public class Qes1_13 {
 		 * 「ハローJAVA43」と表示とさせたいのですが、意図通りに動きません。正しく動作するように修正してください。									
 		 */
 		 String num="20";									
-		 int num1=23;									
-		 System.out.println("ハローJAVA"+(num+""+num1));	
+		 int num1=23;		
+		 int numStr = Integer.parseInt(num);
+		 System.out.println("ハローJAVA"+(numStr+num1));	
 		
 		
 		/*6.『』で囲われた人の情報を変数にして、formatの通りコンソールに出力してください
@@ -153,6 +154,7 @@ public class Qes1_13 {
 		 
 		 /*10.8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません*/
 		 
+		 age = 24;
 		 System.out.println(age >= 25); // true
 		 
 		 /*11.8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください*/
