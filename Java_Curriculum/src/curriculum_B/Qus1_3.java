@@ -14,7 +14,7 @@ public class Qus1_3 {
 		 * */
 
 		Scanner scan = new Scanner(System.in);
-
+		
 		boolean check = false;
 		String name;
 		do {
@@ -122,7 +122,7 @@ public class Qus1_3 {
 			if (fowsHand == 2) {
 				System.out.println("相手の手は「パー」");
 			}
-			count++;
+			count += 1;//count++でも可
 			if (fowsHand == 0 && myHand == 1) {
 				System.out.println("俺の勝ち！");
 				System.out.println("負けは次につながるチャンスです！");
@@ -150,6 +150,6 @@ public class Qus1_3 {
 		System.out.println("やるやん。");
 		System.out.println("次は俺にリベンジさせて。");
 		System.out.println("勝つまでにかかった合計回数は" + count + "回です");
-	}
+		scan.close();}
 
 }
