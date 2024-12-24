@@ -1,5 +1,3 @@
-
-
 package curriculum_B;
 
 public class Qus5 {
