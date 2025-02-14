@@ -12,6 +12,7 @@ public class Person {
 	int age;
 	double height;
 	
+	
 	 static int counter = 0;
 	//問題2：コンストラクタを定義してください（下記それぞれの引数）
 
@@ -27,20 +28,20 @@ public class Person {
 
 	//インスタンスメソッド
 	//問題4：インスタンスフィールド「weight」を定義し、コンストラクタの中で値をセットしてください（double型）
-	double whight;
+	double weight;
 
-	public Person(double whight) {
-		this.whight = whight;
+	public Person(double weight) {
+		
 
 		//問題5：Main.javaの引数にweightの60を入れてください
-		this.whight = 60;
+		this.weight = 60;
 	};
 
 	//問題6：インスタンスメソッド「bmi」を定義してください（戻り値：double）
 	double bmi;
 	//問題7：bmiメソッドでインスタンスのBMIを返すようにしてください
 	public void bmi() {
-		 bmi =((Math.floor((whight/(height/100)/(height/100)) * 100)) / 100);
+		 bmi =((Math.floor((weight/(height/100)/(height/100)) * 100)) / 100);
 	}
 	//問題8：インスタンスメソッド「print」を定義してください（戻り値：void）
 	public void print() {
@@ -49,6 +50,7 @@ public class Person {
 	//問題9：printメソッドの中でthisを用いて「名前は〇〇です」,「年は〇〇です」「BMIは○○です」と出力してください
 		System.out.println("名前は"+name+"です");
 		System.out.println("年齢は"+age+"です");
+		System.out.println("体重は"+weight+"です");
 		System.out.println("BMIは"+bmi+"です");
 		
 		
