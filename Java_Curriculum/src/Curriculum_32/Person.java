@@ -22,7 +22,7 @@ this.lastName = lastName;
 this.age = age;
 this.height = height;
 this.weight = weight;
-count++;
+Person.count++; 
 }
 
 public String fullName(){
