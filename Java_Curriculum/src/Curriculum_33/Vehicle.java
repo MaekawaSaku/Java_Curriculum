@@ -11,5 +11,5 @@ public class Vehicle {
 	public void setOwner(String owner) {
 		this.owner = owner;
 	}
-	
+
 }
